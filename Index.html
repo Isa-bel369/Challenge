@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        margin: 0 auto;
+        background-color: aliceblue;
+        display: grid;
+        grid-template-columns: 1fr repeat(3, 8fr);
+      }
+      .vertical-navbar {
+        background-color: rgb(31, 35, 37);
+        grid-row: span 2;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+      }
+      .horizontal-navbar {
+        background-color: rgb(66, 6, 140);
+        grid-column: span 3;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+        border: 1px solid #000000;
+        font-size: 18px;
+        background-color: rgb(73, 48, 148);
+        width: 100px;
+        align-self: center;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+      }
+      .menu {
+        display: flex;
+        gap: 50px;
+      }
+
+      .mails {
+        background-color: rgb(210, 220, 225);
+        text-align: center;
+        justify-items: center;
+        overflow-y: scroll;
+        height: 600px;
+      }
+      .email {
+        background-color: rgb(229, 232, 234);
+        font-size: 20px;
+      }
+      .info {
+        background-color: rgb(210, 220, 225);
+        font-size: 20px;
+      }
+      /* ----- */
+      .mails p {
+        /* border: 2px solid #000000; */
+        background-color: rgb(182, 190, 194);
+        font-size: 48px;
+        border-left: 0.2px;
+        width: 200px;
+      }
+      button {
+        align-self: flex-end;
+        color: white;
+        background-color: red;
+        margin: 15px;
+        padding: 10px;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="vertical-navbar">
+        <p>Nav</p>
+      </div>
+
+      <nav class="horizontal-navbar">
+        <div class="menu">
+          <a href="">New</a>
+          <a href="">Reply</a>
+          <a href="">Forward</a>
+          <a href="">Mark unread</a>
+        </div>
+        <div class="btn">
+          <button>Trash</button>
+        </div>
+      </nav>
+      <div class="mails">
+        <p>Email 1</p>
+        <p>Email 2</p>
+        <p>Email 3</p>
+        <p>Email 4</p>
+        <p>Email 5</p>
+        <p>Email 6</p>
+      </div>
+      <div class="email">
+        <p>Email view</p>
+      </div>
+      <div class="info">
+        <p>Additional info</p>
+      </div>
+    </div>
+  </body>
+</html>
